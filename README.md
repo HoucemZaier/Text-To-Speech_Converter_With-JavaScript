@@ -9,7 +9,7 @@ Features 🛠️ :
 
 This project showcases the capabilities of JavaScript and the Web Speech API to build accessible and interactive web applications.
 
-try the project : https://houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript/
+try the project : 🔗https://houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript/
 
 
 
