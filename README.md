@@ -11,6 +11,5 @@ This project showcases the capabilities of JavaScript and the Web Speech API to 
 
 try the project : 🔗 [Live Demo](https://houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript/)
 
-
 ![image](https://github.com/user-attachments/assets/c9cb122c-02af-4f4f-b489-3172f727814e)
 
