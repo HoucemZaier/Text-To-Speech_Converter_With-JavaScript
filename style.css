@@ -195,3 +195,61 @@ select{
     background-position-x: calc(100% - 20px);
     background-position-y: 20px;
 }
+
+/* Media query for tablets (max-width: 768px) */
+@media (max-width: 768px) {
+    .hero h1 {
+        font-size: 30px;
+        margin-top: -30px;
+        margin-bottom: 30px;
+    }
+
+    textarea {
+        width: 100%;
+        height: 200px;
+        padding: 15px;
+    }
+
+    .row {
+        width: 100%;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    button {
+        width: 100%;
+        padding: 10px;
+        justify-content: center;
+    }
+
+    select {
+        width: 100%;
+        height: 45px;
+        background-position-x: calc(100% - 15px);
+        background-position-y: 15px;
+    }
+}
+
+/* Media query for mobile phones (max-width: 480px) */
+@media (max-width: 480px) {
+    .hero h1 {
+        font-size: 25px;
+        margin-top: -20px;
+        margin-bottom: 20px;
+    }
+
+    textarea {
+        height: 150px;
+        padding: 10px;
+    }
+
+    button {
+        padding: 8px;
+        font-size: 14px;
+    }
+
+    select {
+        height: 40px;
+        background-position-y: 12px;
+    }
+}
