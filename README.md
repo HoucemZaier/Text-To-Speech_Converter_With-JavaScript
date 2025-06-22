@@ -2,8 +2,8 @@ I recently created a Text-to-Speech application using HTML, CSS, and JavaScript.
 
 Features 🛠️ :
 
-✅ Convert text input to speech with a single click ✅ Select from available system voices for speech output
-✅ Simple and intuitive interface with a textarea and dropdown menu ✅ Real-time voice selection for customized speech synthesis  
+✅ Convert text input to speech with a single click , ✅ Select from available system voices for speech output ,
+✅ Simple and intuitive interface with a textarea and dropdown menu , ✅ Real-time voice selection for customized speech synthesis  
 
 This project showcases the capabilities of JavaScript and the Web Speech API to build accessible and interactive web applications.
 
