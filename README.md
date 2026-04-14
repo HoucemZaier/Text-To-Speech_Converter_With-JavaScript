@@ -2,7 +2,6 @@
 
 A simple, elegant web application that converts written text into spoken audio using the Web Speech API. 
 
-![Project Preview](images/preview.png)
 
 ---
 
