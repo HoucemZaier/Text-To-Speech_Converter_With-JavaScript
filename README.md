@@ -1,246 +1,351 @@
-# Text To Speech Converter
+# 🎙️ Text-To-Speech Converter
 
-A simple, elegant web application that converts written text into spoken audio using the Web Speech API. 
+A lightweight, elegant web application that converts written text into natural-sounding speech using the native Web Speech API.
 
+**[🔗 Live Demo](https://houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript/) | [📂 GitHub Repo](https://github.com/HoucemZaier/Text-To-Speech_Converter_With-JavaScript)**
 
 ---
 
 ## 📋 Table of Contents
 
 - [Overview](#overview)
-- [Features](#features)
-- [Project Structure](#project-structure)
-- [Installation](#installation)
-- [Usage](#usage)
-- [Technical Details](#technical-details)
-- [Browser Compatibility](#browser-compatibility)
-- [Contributing](#contributing)
+- [✨ Features](#-features)
+- [🚀 Quick Start](#-quick-start)
+- [📁 Project Structure](#-project-structure)
+- [💡 Usage Guide](#-usage-guide)
+- [🔧 Technical Details](#-technical-details)
+- [🌐 Browser Compatibility](#-browser-compatibility)
+- [🎨 Customization](#-customization)
+- [🐛 Troubleshooting](#-troubleshooting)
+- [📝 Future Enhancements](#-future-enhancements)
+- [📄 License](#-license)
 
 ---
 
 ## 🎯 Overview
 
-This Text To Speech Converter is a lightweight web application that leverages the native Web Speech API to provide users with a seamless experience of converting written text into natural-sounding speech. The application features voice selection, clean UI, and intuitive controls.
+This Text-To-Speech Converter is a modern, user-friendly web application built with pure HTML, CSS, and JavaScript. It leverages the native **Web Speech API** to provide seamless text-to-speech conversion without requiring external libraries or dependencies.
+
+**Key Highlights:**
+- ⚡ Zero external dependencies
+- 🎨 Modern, responsive UI with Poppins font
+- 🔊 Multiple voice options
+- ⌨️ Keyboard-friendly interface
+- 📱 Works on desktop and tablet devices
 
 ---
 
 ## ✨ Features
 
-- **Text Input**: Write or paste any text into the textarea
-- **Voice Selection**: Choose from multiple available system voices
-- **Play Button**: Listen to your text with a single click
-- **Real-time Voice Switching**: Change voices instantly
-- **Input Validation**: Prevents empty text submission
-- **Responsive Design**: Works on desktop and tablet devices
-- **Modern UI**: Built with Poppins font family for a contemporary look
+| Feature | Description |
+|---------|-------------|
+| 📝 **Text Input** | Write or paste any text into the textarea |
+| 🎤 **Voice Selection** | Choose from multiple available system voices |
+| ▶️ **Play Button** | Listen to your text with a single click |
+| 🔄 **Real-time Voice Switching** | Change voices instantly without interruption |
+| ✅ **Input Validation** | Prevents empty text submission |
+| 📱 **Responsive Design** | Works seamlessly on desktop and tablets |
+| 🎨 **Modern UI** | Clean, contemporary interface with Poppins font |
+| ⌨️ **Keyboard Support** | Press Enter to speak |
+
+---
+
+## 🚀 Quick Start
+
+### Prerequisites
+
+- Modern web browser with Web Speech API support (Chrome, Firefox, Safari, Edge, Opera)
+- No additional software or packages required
+
+### Installation
+
+1. **Clone the repository**
+   ```bash
+   git clone https://github.com/HoucemZaier/Text-To-Speech_Converter_With-JavaScript.git
+   cd Text-To-Speech_Converter_With-JavaScript
+   ```
+
+2. **Open in browser** - Choose one of these methods:
+   
+   **Option A: Direct File Opening**
+   - Double-click `index.html` in your file explorer
+   
+   **Option B: Local Server (Recommended)**
+   ```bash
+   # Using Python 3
+   python -m http.server 8000
+   
+   # Using Python 2
+   python -m SimpleHTTPServer 8000
+   
+   # Using Node.js http-server
+   npx http-server
+   ```
+
+3. **Access the application**
+   - Open your browser and navigate to `http://localhost:8000`
 
 ---
 
 ## 📁 Project Structure
 
 ```
-text_to_speech/
-├── index.html      # Main HTML structure
-├── script.js       # JavaScript functionality
-├── style.css       # Styling and typography
-├── images/         # Image assets (play.png icon)
-└── README.md       # Documentation (this file)
+Text-To-Speech_Converter_With-JavaScript/
+├── 📄 index.html          # HTML structure and markup
+├── 🎨 style.css           # Styling, layout, and typography (70.6%)
+├── 📜 script.js           # Web Speech API logic (14.5%)
+├── 🖼️ images/             # UI assets (play button icon)
+└── 📖 README.md           # Documentation (this file)
 ```
 
-### File Descriptions
+### Language Composition
+- **CSS**: 70.6% - Comprehensive styling and layout
+- **HTML**: 14.9% - Semantic markup structure
+- **JavaScript**: 14.5% - Lightweight API integration
 
-| File | Purpose |
-|------|---------|
-| `index.html` | Contains the DOM structure for the converter interface |
-| `script.js` | Handles Web Speech API interactions and event listeners |
-| `style.css` | Defines visual styling and Poppins font variations |
-| `images/` | Stores UI assets (play button icon) |
+### File Details
+
+| File | Purpose | Key Responsibility |
+|------|---------|-------------------|
+| `index.html` | DOM structure | Semantic HTML5 markup for the interface |
+| `script.js` | Logic layer | Web Speech API interactions & event handling |
+| `style.css` | Presentation | Modern styling with Google Fonts (Poppins) |
+| `images/` | Assets | UI icons (play button) |
 
 ---
 
-## 🚀 Installation
+## 💡 Usage Guide
 
-### Prerequisites
-- Modern web browser with Web Speech API support
-- No external dependencies required
+### Basic Workflow
 
-### Setup
+1. **Enter your text**
+   - Click in the text area
+   - Type or paste content
 
-1. **Clone or Download** the project files to your local machine
-   ```bash
-   git clone <repository-url>
-   cd text_to_speech
-   ```
+2. **Select a voice** (optional)
+   - Click the voice dropdown
+   - Choose your preferred voice or language
 
-2. **Open in Browser** - Simply open `index.html` in your web browser
-   - Double-click the file, or
-   - Use a local server (recommended):
-     ```bash
-     # Using Python 3
-     python -m http.server 8000
-     
-     # Using Python 2
-     python -m SimpleHTTPServer 8000
-     
-     # Using Node.js (with http-server)
-     npx http-server
-     ```
+3. **Click "Listen"**
+   - Press the play button
+   - Or press `Enter` key
 
-3. **Access the Application** - Navigate to `http://localhost:8000` in your browser
+4. **Enjoy the audio output**
 
----
-
-## 💡 Usage
-
-### Basic Steps
-
-1. **Enter Text**: Click in the textarea and type or paste your text
-2. **Select Voice** (Optional): Choose a preferred voice from the dropdown menu
-3. **Listen**: Click the "Listen" button or press Enter to hear the text spoken aloud
-
-### Example Workflow
+### Example
 
 ```
-1. Write: "Hello, this is a text to speech converter!"
-2. Choose: Select "Google UK English Female" from voices
-3. Listen: Click the play button
-4. Result: Hear the text spoken in the selected voice
+Input:   "Hello, this is a text-to-speech converter!"
+Voice:   Google UK English Female
+Result:  Hears the text spoken naturally in the selected voice
 ```
 
 ### Keyboard Shortcuts
 
 | Action | Shortcut |
 |--------|----------|
-| Toggle Playback | Click the Listen button |
-| Change Voice | Select from dropdown menu |
+| Speak Text | `Enter` key |
+| Change Voice | Dropdown menu |
+| Clear Text | Manual selection |
 
 ---
 
 ## 🔧 Technical Details
 
-### Technologies Used
+### Core Technologies
 
-- **HTML5**: Semantic markup and form elements
-- **CSS3**: Modern styling with Google Fonts (Poppins)
-- **JavaScript (ES6)**: DOM manipulation and Web Speech API
-- **Web Speech API**: Browser-native speech synthesis
+| Technology | Role | Usage |
+|------------|------|-------|
+| **HTML5** | Markup | Semantic structure & form elements |
+| **CSS3** | Styling | Responsive layout, Google Fonts (Poppins) |
+| **JavaScript ES6** | Logic | DOM manipulation, API interaction |
+| **Web Speech API** | Speech | Native browser speech synthesis |
 
-### Key JavaScript Components
+### Key JavaScript APIs
 
-#### SpeechSynthesisUtterance
+#### 1. SpeechSynthesisUtterance
 ```javascript
 let speech = new SpeechSynthesisUtterance();
+speech.text = "Your text here";
 ```
-Creates a speech object that holds the text to be spoken and voice properties.
+Creates a speech object that holds text and voice properties.
 
-#### Voice Selection
+#### 2. Voice Management
 ```javascript
 window.speechSynthesis.onvoiceschanged = () => {
     voices = window.speechSynthesis.getVoices();
-    // Populates dropdown with available voices
+    // Dynamically populate voice dropdown
 };
 ```
-Dynamically loads available system voices and populates the voice selector.
+Loads available system voices and populates the selector.
 
-#### Text-to-Speech Execution
+#### 3. Speech Synthesis
 ```javascript
-speech.text = text;
 window.speechSynthesis.speak(speech);
 ```
-Converts the input text to speech using the selected voice.
+Triggers the text-to-speech conversion using the selected voice.
+
+### Event Flow
+
+```
+User Input (Text + Voice)
+        ↓
+Input Validation
+        ↓
+Create SpeechSynthesisUtterance
+        ↓
+Configure Voice & Settings
+        ↓
+Call speechSynthesis.speak()
+        ↓
+Audio Output
+```
 
 ### Event Listeners
 
 | Event | Trigger | Action |
 |-------|---------|--------|
-| `click` (button) | User clicks Listen button | Speaks the textarea text |
-| `change` (select) | User changes voice | Updates speech voice property |
-| `voiceschanged` | Voices load in browser | Populates voice dropdown |
+| `click` (button) | User clicks Listen | Speaks text |
+| `change` (select) | Voice selection changes | Updates speech voice |
+| `voiceschanged` | Voices load | Populates dropdown |
+| `keypress` | Enter key pressed | Speaks text |
 
 ---
 
 ## 🌐 Browser Compatibility
 
-| Browser | Status | Notes |
-|---------|--------|-------|
-| Chrome/Edge | ✅ Full Support | Best performance |
-| Firefox | ✅ Full Support | Compatible |
-| Safari | ✅ Full Support | iOS 14.5+ required for iOS |
-| Opera | ✅ Full Support | Compatible |
-| Internet Explorer | ❌ Not Supported | Web Speech API not available |
+| Browser | Support | Notes |
+|---------|---------|-------|
+| ✅ Chrome/Chromium | Full | Best performance |
+| ✅ Firefox | Full | Excellent support |
+| ✅ Safari | Full | iOS 14.5+ for mobile |
+| ✅ Edge | Full | Full compatibility |
+| ✅ Opera | Full | Compatible |
+| ❌ Internet Explorer | None | Web Speech API unavailable |
 
-**Note**: Supported voices vary by operating system and browser.
+**Note**: Available voices vary by operating system and browser installation.
 
 ---
 
 ## 🎨 Customization
 
-### Change Font
-Edit the font import in `index.html`:
+### Change Font Family
+
+Edit `index.html`:
 ```html
-<link href="https://fonts.googleapis.com/css2?family=YOUR_FONT:wght@400;600;700&display=swap">
+<link href="https://fonts.googleapis.com/css2?family=FONT_NAME:wght@400;600;700&display=swap" rel="stylesheet">
 ```
 
-### Modify Title
-Update the `<h1>` tag in `index.html`:
+### Modify Application Title
+
+Edit `index.html`:
 ```html
 <h1>Your Custom Title <span>Converter</span></h1>
 ```
 
-### Adjust Speech Speed/Pitch
+### Adjust Speech Properties
+
 Add to `script.js`:
 ```javascript
-speech.rate = 1.0;      // Speed (0.1 to 10)
-speech.pitch = 1.0;     // Pitch (0 to 2)
-speech.volume = 1.0;    // Volume (0 to 1)
+speech.rate = 1.0;      // Speed: 0.1 (slow) to 10 (fast)
+speech.pitch = 1.0;     // Pitch: 0 (low) to 2 (high)
+speech.volume = 1.0;    // Volume: 0 (silent) to 1 (loud)
+```
+
+### Change Color Scheme
+
+Modify variables in `style.css`:
+```css
+:root {
+    --primary-color: #your-color;
+    --accent-color: #your-color;
+    --background-color: #your-color;
+}
 ```
 
 ---
 
 ## 🐛 Troubleshooting
 
-### Issue: No voices appear in dropdown
-**Solution**: Wait a moment for voices to load, or refresh the browser
+### ❓ No voices appear in the dropdown
 
-### Issue: Audio not playing
-**Solution**: 
-- Ensure browser supports Web Speech API
-- Check system volume settings
-- Verify text input is not empty
+**Solution:**
+- Wait a few seconds for voices to load
+- Refresh the browser page
+- Ensure Web Speech API is available in your browser
 
-### Issue: Only one voice available
-**Solution**: This is system-dependent. Different operating systems and browsers have different voice libraries.
+### ❓ Audio is not playing
+
+**Solutions:**
+1. Verify your browser supports Web Speech API
+2. Check system volume is not muted
+3. Ensure text input is not empty
+4. Try a different browser
+
+### ❓ Only one voice is available
+
+**Solution:**
+This is system-dependent. Different operating systems and browsers have different voice libraries. This is normal behavior.
+
+### ❓ Audio is cutting off
+
+**Solution:**
+- Check the text length (very long text may be truncated by the browser)
+- Try breaking text into smaller chunks
+- Verify your browser supports streaming speech
 
 ---
 
 ## 📝 Future Enhancements
 
-- [ ] Pause/Resume functionality
-- [ ] Speed and pitch controls
-- [ ] Download audio as MP3
-- [ ] Text history
-- [ ] Dark mode toggle
-- [ ] Multi-language support
-- [ ] Rate limiting for speech synthesis
+Planned features for future releases:
+
+- [ ] ⏸️ Pause and Resume functionality
+- [ ] 🎚️ Speed and Pitch control sliders
+- [ ] 📥 Download audio as MP3 file
+- [ ] 📚 Text input history
+- [ ] 🌙 Dark mode toggle
+- [ ] 🌍 Multi-language support
+- [ ] ⏱️ Rate limiting for speech synthesis
+- [ ] 🎯 Text highlighting during playback
+- [ ] 💾 Save/Load presets
+- [ ] 📊 Usage statistics
 
 ---
 
 ## 📄 License
 
-This project is open source and available under the MIT License.
+This project is open source and available under the **MIT License**.
+
+You are free to:
+- Use commercially and privately
+- Modify and distribute
+- Use patent claims
+
+See LICENSE file for details.
 
 ---
 
-## 👨‍💻 Author
+## 👨‍💻 Author & Credit
 
-Created as a mini project for learning Web APIs and modern web development.
+**Created by:** Houcem Zaier  
+**Purpose:** Educational project for learning Web APIs and modern web development  
+**Last Updated:** April 2026
 
 ---
 
+## 🔗 Links
 
-**Last Updated**: April 2026
+- **Live Demo:** [houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript](https://houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript/)
+- **Repository:** [GitHub](https://github.com/HoucemZaier/Text-To-Speech_Converter_With-JavaScript)
+- **Report Issues:** [GitHub Issues](https://github.com/HoucemZaier/Text-To-Speech_Converter_With-JavaScript/issues)
 
+---
 
-try the project : 🔗 [Live Demo](https://houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript/)
+## 📸 Preview
 
-![image](https://github.com/user-attachments/assets/5f96f36b-8fb5-4f04-a610-3844fc8fb9c8)
+![Text-To-Speech Converter Interface](https://github.com/user-attachments/assets/5f96f36b-8fb5-4f04-a610-3844fc8fb9c8)
+
+---
+
+**Made with ❤️ for web developers who love clean code and modern APIs**
