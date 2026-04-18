@@ -2,7 +2,7 @@
 
 A lightweight, elegant web application that converts written text into natural-sounding speech using the native Web Speech API.
 
-**[🔗 Live Demo](https://houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript/) **
+[🔗 Live Demo](https://houcemzaier.github.io/Text-To-Speech_Converter_With-JavaScript/) 
 
 ---
 
